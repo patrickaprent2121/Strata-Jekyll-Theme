@@ -1,7 +1,7 @@
 locale: "en-UK"
 title: Patrick Aprent # Title of your site
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/blog/" # the subpath of your site, e.g. /blog/
 google_analytics_key: ""
 
 # Default description in social shares for the jekyll-seo-tag gem
