@@ -1,4 +1,4 @@
-locale: "en-US"
+locale: "en-UK"
 title: Patrick Aprent # Title of your site
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -12,9 +12,9 @@ description: > # this means to ignore newlines until "baseurl:"
 
 # Author details for the jekyll-seo-tag gem
 author:
-  name: Your Name
+  name: Patrick Aprent
   email: patrickaprent@gmail.com
-  twitter: # twitter username without the @ symbol
+  twitter: AprentPatrick # twitter username without the @ symbol
 
 # Social details for the jekyll-seo-tag gem
 social:
