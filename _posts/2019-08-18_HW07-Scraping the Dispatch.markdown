@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HW07 - Scraping the “Dispatch”
+title: HW07 - Scraping the Dispatch
 date: 2019-08-12T14:37:44.000Z
 categories: update
 ---
