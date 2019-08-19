@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HW07 - Scraping the "Dispatch"
+title: HW07 - Scraping the “Dispatch”
 date: 2019-08-12T14:37:44.000Z
 categories: update
 ---
@@ -18,7 +18,7 @@ wget -i file_with_links.txt
 wget -i links.txt -P ./folderYouWantToSaveTo/ -nc
 ```
 
-# Download issues of "Richmond Times Dispatch" (Years 1860–1865)
+# Download issues of “Richmond Times Dispatch” (Years 1860–1865)
 
 The issues are available as xml files each. 
 http://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:RichTimes
