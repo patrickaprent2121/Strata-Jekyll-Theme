@@ -18,7 +18,7 @@ wget -i file_with_links.txt
 wget -i links.txt -P ./folderYouWantToSaveTo/ -nc
 '''
 
-# Download issues of “Richmond Times Dispatch” (Years 1860–1865)
+# Download issues of "Richmond Times Dispatch" (Years 1860–1865)
 
 The issues are available as xml files each. 
 http://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:RichTimes
