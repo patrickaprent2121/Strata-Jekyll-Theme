@@ -1,0 +1,7 @@
+---
+layout: post
+title: HW07 - Codecademy’s Learn Python, Unit 9-10.
+date: 2019-07-07T14:37:44.000Z
+categories: update
+---
+<img src="/images/fulls/008a.jpg" class="fit image"> Confirmation Screenshot.
