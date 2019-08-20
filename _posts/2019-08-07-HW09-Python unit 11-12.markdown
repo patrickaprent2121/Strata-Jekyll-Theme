@@ -1,0 +1,9 @@
+---
+layout: post
+title: HW09 - Codecademy’s Learn Python, Unit 11-12.
+date: 2019-08-07T14:37:44.000Z
+categories: update
+---
+<img src="/images/fulls/009a.jpg" class="fit image"> Confirmation Screenshot.
+
+<img src="/images/fulls/009b.jpg" class="fit image"> Course finished!!
