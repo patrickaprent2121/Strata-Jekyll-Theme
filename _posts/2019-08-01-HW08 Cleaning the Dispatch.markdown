@@ -39,3 +39,4 @@ for f in listOfFiles:
           # write text
           f9.write(text)
 ```
+<img src="/images/fulls/008-2.jpg" class="fit image"> 
