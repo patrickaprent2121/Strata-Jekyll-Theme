@@ -4,8 +4,14 @@ title: HW09 - Restructuring the “Dispatch”
 date: 2019-07-08T14:37:44.000Z
 categories: update
 ---
+This task was to reformat and restructure the Dispatch files and create one TSV-file (Tab-separated value) with the entire content. Each article should appear as a single record and include:
 
+* date;
+* type of an entry (articles, advertisements, notices, etc);
+* header;
+* the text of an entry.
 
+It was done with this python script:
 ```
 # importing necessary libraries
 import re, os
