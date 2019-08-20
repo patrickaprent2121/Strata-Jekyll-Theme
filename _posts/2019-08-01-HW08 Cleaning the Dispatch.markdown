@@ -5,10 +5,7 @@ date: 2019-07-08T14:37:44.000Z
 categories: update
 ---
 
-In a first step a), the scraped xml files of all “Dispatch” issues should be cleaned up from all the xml tagging, and saved as clean/pure text files.
-
-The second task b) was to create clean copies of all articles from the issues of the “Dispatch”.
-
+In a first step a), the scraped xml files of all “Dispatch” issues should be cleaned up from all the xml tagging, and saved as clean/pure text files. The second task b) was to create clean copies of all articles from the issues of the “Dispatch”.
 For both tasks a python script was needed.
 
 a) Cleaned issues of the “Dispatch” 
