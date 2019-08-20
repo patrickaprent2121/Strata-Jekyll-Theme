@@ -4,7 +4,6 @@ title: HW08 - Cleaning the “Dispatch”
 date: 2019-07-08T14:37:44.000Z
 categories: update
 ---
-# HW08 - Cleaning the “Dispatch”
 
 In a first step a), the scraped xml files of all “Dispatch” issues should be cleaned up from all the xml tagging, and saved as clean/pure text files.
 
