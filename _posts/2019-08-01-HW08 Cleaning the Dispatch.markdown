@@ -11,7 +11,7 @@ The second task b) was to create clean copies of all articles from the issues of
 
 For both tasks a python script was needed.
 
-a)
+a) Cleaned issues of the “Dispatch” 
 ```
 # importing python libraries
 import re
@@ -40,3 +40,71 @@ for f in listOfFiles:
           f9.write(text)
 ```
 <img src="/images/fulls/008-2.jpg" class="fit image"> 
+
+
+b) Cleaned articles of the “Dispatch” 
+
+```
+import re 
+import os
+
+source = "/Users/patrickaprent/Google_Drive/UNI/KU-Methodenkurs-DH_2019/08_/HW08/Download_Dispatch_copy/"
+newFolder = "/Users/patrickaprent/Google_Drive/UNI/KU-Methodenkurs-DH_2019/08_/HW08/Tagret_Folder_b2/"
+
+lof = os.listdir(source)
+counter = 0 # general counter to keep track of the progress
+
+for f in lof:
+    if f.startswith("dltext"): # startswith string method, fileName test
+        # open(close) file via with statement   
+        with open(source + f, "r", encoding="utf8") as f1:
+            text = f1.read()
+
+            # regex search function, try to find the date, “group(1)” returns first parenthesized subgroup
+            date = re.search(r'<date value="([\d-]+)"', text).group(1)
+
+            # splitting the issue into articles/items
+            split = re.split("<div3 ", text)
+
+            c = 0 # item counter
+            for s in split[1:]:
+                c += 1
+                s = "<div3 " + s # a step to restore the integrity of items
+                #input(s)
+
+                # try to find a unitType
+                try:
+                    unitType = re.search(r'type="([^\"]+)"', s).group(1)
+                except:
+                    unitType = "noType"
+                    print(s)
+                    
+
+	        # removes markup from each file
+                text = re.sub("<[^<]+>", "", s)
+                text = re.sub(" +\n|\n +", "\n", text)
+                text = re.sub("\n+", ";;; ", text)
+
+                # generating necessary bits 
+                fName = date+"_"+unitType+"_"+str(c)
+
+                itemID = "#ID: " + date+"_"+unitType+"_"+str(c)
+                dateVar   = "#DATE: " + date
+                unitType = "#TYPE: " + unitType
+                header = "#HEADER: " #+ header
+                text = "#TEXT: " + text
+
+                # creating a text variable
+                var = "\n".join([itemID,dateVar,unitType,header,text])
+                #input(var)
+
+                # saving
+                with open(newFolder+fName+".txt", "w", encoding="utf8") as f9:
+                    f9.write(var)
+
+        # count processed issues and print progress counter at every 100        
+        counter += 1
+        if counter % 100 == 0:
+            print(counter)
+```
+
