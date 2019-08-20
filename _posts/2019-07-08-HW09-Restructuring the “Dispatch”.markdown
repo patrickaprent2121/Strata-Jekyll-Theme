@@ -95,3 +95,4 @@ with open("dispatch_as_TSV.csv", "w", encoding="utf8") as f9:
 print(counter)
 
 ```
+<img src="/images/fulls/009-b.jpg" class="fit image"> 
