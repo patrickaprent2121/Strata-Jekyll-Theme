@@ -52,22 +52,22 @@ def generateTGNdata(source):
                             # first, we search for the Latitude part and store it to latGr
                             latGr = re.search(r"<Latitude>(.*)</Latitude>", d).group(1)
 
-                            # Longitude and Latitude in decimals are unfortunately not really precise in the tgn files  
-                            # therefore within latGr we're getting degrees, minutes and seconds, and recalculate the decimal
+                            # Longitude and Latitude in decimals are unfortunately not precise in the tgn files  
+                            # therefore within latGr we're getting degrees, minutes and seconds, to calculate the decimal
                             degrees = re.search(r"<Degrees>(.*)</Degrees>", latGr).group(1)
                             minutes = re.search(r"<Minutes>(.*)</Minutes>", latGr).group(1)
                             seconds = re.search(r"<Seconds>(.*)</Seconds>", latGr).group(1)
                             decimal_lat = re.search(r"<Decimal>(.*)</Decimal>", latGr).group(1) 
 
                             # Calculating lat as decimal: 
-                            # "try block" testing if there are coordinates at all. Otherwise giving out an error exception and "NA"
+                            # "try block" testing if there are coordinates at all. Otherwise give out error exception and "NA"
                             try:
                                 lat = int(degrees) + (float(minutes) * 1/60) + (float(seconds) * 1/60 * 1/60)
                                 lat = str(lat) # lat transformed to string
 
                                 decimal_lat = str(decimal_lat) # decimal_lat also as string..
 
-                                # ..and checking if there is a minus (for direction West/South), if so, adding that to variable "lat"
+                                # ..and checking if there is a minus (for direction West/South), if so, adding that to "lat"
                                 if "-" in decimal_lat: 
                                     lat = "-"+lat 
                             except ValueError: # error exception returning str "NA" when there are no coordinates
