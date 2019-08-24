@@ -5,6 +5,9 @@ date: 2019-08-21T14:37:44.000Z
 categories: update
 ---
 
+PART A)
+
+
 ```
 # importing python libraries
 import re, os
@@ -131,7 +134,9 @@ generateTGNdata(source)
 ```
 
 
+
 PART B)
+From the “Dispatch”-xml-files all tgn numbers and their frequencies are scraped/mined and saved in a TSV file.
 
 ```
 # import python libraries
