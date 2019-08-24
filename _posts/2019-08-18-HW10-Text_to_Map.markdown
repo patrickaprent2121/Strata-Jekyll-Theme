@@ -214,3 +214,85 @@ generate("1865")
 ```
 
 <img src="/images/fulls/010a.jpg" class="fit image">
+
+PART C:
+
+```
+# importing python libraries
+import re, os
+
+# define function with parameter "tgnTSV"
+def loadTGN(tgnTSV):
+	# opening(closing) file with utf-8 encoding
+    with open(tgnTSV, "r", encoding="utf8") as f1:
+        data = f1.read().split("\n") # reads into the file, splits by newlines, stored to data
+
+        # creates empty dictionary
+        dic = {}
+
+        # for-loop for every d in data splitting it at tab
+        for d in data:
+            d = d.split("\t")
+
+            # saving data to the dictionary
+            dic[d[0]] = d
+
+    # return dictionary
+    return(dic)
+
+# define match function with two parameters
+def match(freqFile, dicToMatch):
+	# opening(closing) file with utf-8 encoding
+    with open(freqFile, "r", encoding="utf8") as f1:
+        data = f1.read().split("\n") # reading data and splitting  by new lines
+
+        # creating empty lists and a counter
+        dataNew = []
+        dataNewNA = []
+        count = 0
+
+        # for-loop looping through dispatch toponyms file
+        for d in data[1:]:
+            tgnID = d.split("\t")[1] # splitting at tab, storing tgnID
+            freq  = d.split("\t")[0] # splitting at tab, storing freq-value at index 0
+
+            # if-statement to match places from dispatch against the tgn-file via tgn-numbers
+            if tgnID in dicToMatch:
+                val = "\t".join(dicToMatch[tgnID]) # found matches stored to val tab-separated
+                val  = val + "\t" + freq # adding the freq to the tgn ID tab-separated
+
+                # separate data with or without valid coordinates and append it to according list
+                if "\tNA\t" in val:
+                    dataNewNA.append(val)
+                else:
+                    dataNew.append(val)
+            
+            # prints the tgn numbers that couldn't be found
+            else:
+                print("%s (%d) not in TGN!" % (tgnID, int(freq)))
+                count += 1 
+
+    # header for tsv file, tab-separated
+    header = "tgnID\tplacename\tlat\tlon\tfreq\n"
+
+    # joining everything (tgnList + header) and writing/saving it as a tsv file
+    with open("coord_"+freqFile, "w", encoding="utf8") as f9a:
+        f9a.write(header + "\n".join(dataNew))
+
+    # and a tsv file for the toponyms without coordinates
+    with open("coord_NA_"+freqFile, "w", encoding="utf8") as f9b:
+        f9b.write(header + "\n".join(dataNewNA))
+
+    # print a summary on the files that have not matched
+    print("%d item have not been matched..." % count)
+
+# loading function with the tgn-data-file and stored to variable "dictionary"
+dictionary = loadTGN("21-08-2019_tgn_data_light.tsv")
+
+# running the match function with its two parameters. the dispatch-toponyms against the just created tgn-dictionary
+match("dispatch_toponyms_1861.tsv", dictionary)
+match("dispatch_toponyms_1862.tsv", dictionary)
+match("dispatch_toponyms_1863.tsv", dictionary)
+match("dispatch_toponyms_1864.tsv", dictionary)
+match("dispatch_toponyms_1865.tsv", dictionary)
+```
