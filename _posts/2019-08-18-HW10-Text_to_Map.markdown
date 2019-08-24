@@ -130,4 +130,83 @@ generateTGNdata(source)
 
 ```
 
+
+PART B)
+
+```
+# import python libraries
+import re, os
+
+# path to source and target folder
+source = "/Users/patrickaprent/Google_Drive/UNI/KU-Methodenkurs-DH_2019/08_/HW08/Download_Dispatch_copy/"
+target = "/Users/patrickaprent/Google_Drive/UNI/KU-Methodenkurs-DH_2019/10_/Target_HW10/"
+
+# list containing the names of the files in the directory 
+lof = os.listdir(source)
+counter = 0 # general counter to keep track of the progress
+
+# function to create tsv file with parameter filter
+def generate(filter):
+
+    # python Dictionary for tgn-number and frequency
+    topCountDictionary = {}
+
+    # print(filter)
+    counter = 0
+    
+    # for-loop, looping through lof
+    for f in lof:
+        if f.startswith("dltext"): # if f (fileName) starts with "dltext" start process       
+            # opening(closing) file with utf-8 encoding
+            with open(source + f, "r", encoding="utf8") as f1:
+                text = f1.read() # getting data 
+
+                text = text.replace("&amp;", "&") # some cleaning up in the text of the file
+
+                # try to find the date, store as "date"
+                date = re.search(r'<date value="([\d-]+)"', text).group(1)
+                #print(date)
+
+                # checking if date starts with a year (this will be the filter later)
+                if date.startswith(filter):
+
+                    # for-loop to find all tgn numbers
+                    for tg in re.findall(r"(tgn,\d+)", text):
+                        tgn = tg.split(",")[1] # splits the found string and stores it to "tgn"
+
+                        # if tgn number appears to be in the topCountDictionary add 1 to count
+                        if tgn in topCountDictionary:
+                            topCountDictionary[tgn] += 1
+                        
+                        # else add it with 1
+                        else:
+                            topCountDictionary[tgn]  = 1
+
+                    
+    # list for TSV file          
+    top_TSV = []
+
+    # for-loop appending the key and value from the Dictionary to the TSV list
+    for k,v in topCountDictionary.items():
+        val = "%09d\t%s" % (v, k) # defining how items should be arranged
+        # appending process with val
+        top_TSV.append(val)                    
+
+    # SAVING
+    header = "freq\ttgn\n" # defining header 
+    
+    # opening(closing) file with utf-8 encoding
+    with open("dispatch_toponyms_%s.tsv" % filter, "w", encoding="utf8") as f9:
+        f9.write(header+"\n".join(top_TSV)) # writing the content to the TSV file
+    #print(counter)
+
+# generate("186")
+# starting the function with the years
+generate("1861")
+generate("1862")
+generate("1863")
+generate("1864")
+generate("1865")
+```
+
 <img src="/images/fulls/010a.jpg" class="fit image">
