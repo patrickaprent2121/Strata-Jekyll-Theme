@@ -5,8 +5,8 @@ date: 2019-08-21T14:37:44.000Z
 categories: update
 ---
 
-PART A)
 
+Part A: From the downloadable full TGN, the “Getty Thesaurus of Geographic Names”, we mine all Places, Place IDs and Coordinates, and store them in a TSV file. One challenge was to recalculate the decimals for Longitude and Latitude of the places.
 
 ```
 # importing python libraries
@@ -132,11 +132,10 @@ generateTGNdata(source)
 # TGN has 2505153 items
 
 ```
+<img src="/images/fulls/10p1.jpg" class="fit image">
 
 
-
-PART B)
-From the “Dispatch”-xml-files all tgn numbers and their frequencies are scraped/mined and saved in a TSV file.
+PART B: From the “Dispatch”-xml-files all tgn numbers and their frequencies are scraped/mined and saved in a TSV file.
 
 ```
 # import python libraries
