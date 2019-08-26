@@ -48,8 +48,11 @@ First, the script “modelled” 20 topics:
         'king, richmond, proclamation',
  't19': 'priv, prices, price, pounds, st, pound, bushel, horses, profits, hire'}
 ```
-Most topics certainly make sense in the context of the historical events and developments (Civil War, Richmond). Some, on the other hand, seem to be too generic or are just not really useful at first glance. 
+Most topics certainly make sense in the context of historical events and developments (Civil War, Richmond). Some, on the other hand, seem to be too generic or are just not really useful at first glance. 
 “t15” - by all its cruelty from todays perspective - seemed to be quite concrete and straightforward contentwise, and (at that point still unaware that Robert K. Nelson is also featuring it heavily in his project “Mining the Dispatch”) I wanted to look deeper into this topic and texts. A huge amount of the Dispatch issues feature what Nelson describes as “fugitive slave advertisements”, where there are “rewards” of a certain amount of “dollars” offered for relevant tips or the return of fugitive slaves, who were then described by their outward appearance, the location they were last seen etc. 
 Looking into the texts, it becomes apparent that certain words are used repeatably in always very similar structured articles. These patterns of word usage and structure are detected by the algorithms, and assigned relatively as topics to the articles. 
 
-<img src="/images/fulls/12a.jpg" class="fit image"> Confirmation Screenshot.
+<img src="/images/fulls/12a.jpg" class="fit image"> 
+
+
+
