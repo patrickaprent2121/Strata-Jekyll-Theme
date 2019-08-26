@@ -4,4 +4,5 @@ title: HW07 - Codecademy’s Learn Python, Unit 7-8.
 date: 2019-08-18T14:37:44.000Z
 categories: update
 ---
-<img src="/images/fulls/007a.jpg" class="fit image"> Confirmation Screenshot.
+Confirmation Screenshot.
+<img src="/images/fulls/007a.jpg" class="fit image"> 
