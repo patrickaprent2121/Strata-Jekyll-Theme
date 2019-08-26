@@ -54,7 +54,6 @@ Looking into the texts, it becomes apparent that certain words are used repeatab
 
 <img src="/images/fulls/12a.jpg" class="fit image"> 
 
-This, the possibility to automatically visualise long-term developments (represented via the topics) backed by (hugely) large samples, certainly are very powerful tools and methods for historians that - when critically applied - allow new perspectives on certain research areas.
-Also the graphs visualising the (relative) appearance, the trends, of topics, also in comparison to each other or incisive historical events, 
+This, the possibility to automatically visualise long-term developments (represented via the topics) backed by (hugely) large samples, certainly are very useful tools and methods for historians that - when critically applied - allow new perspectives on certain research areas, especially the graphs visualising the (relative) appearance - the trend of a topic - compared to other topics and incisive historical events.
 
 <img src="/images/fulls/12b.jpg" class="fit image"> 
