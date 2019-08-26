@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HW12 - Topic Modeling
-date: 2019-07-01T14:37:44.000Z
+date: 2019-07-17T14:37:44.000Z
 categories: update
 ---
 HW12 - Topic Modeling
