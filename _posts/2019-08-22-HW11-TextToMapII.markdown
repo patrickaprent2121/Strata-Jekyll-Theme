@@ -6,4 +6,4 @@ categories: update
 ---
 TETSTETSTDHDNSGFSFSFFG
 
-<img src="/images/fulls/Dispatch-freq-1861-1865_GIF-Animation_MID.gif" class="fit image"> Course finished!!
+<img src="/images/fulls/Dispatch-freq-1861-1865_GIF-Animation_MID.gif" class="fit image"> 
