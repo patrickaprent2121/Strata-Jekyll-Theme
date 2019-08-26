@@ -4,11 +4,10 @@ title: HW12 - Topic Modeling
 date: 2019-06-06T14:37:44.000Z
 categories: update
 ---
-HW12 - Topic Modeling
 
 The Task was topic modeling the “Dispatch” with a provided R-script and with the jupyter notebook. 
 
-First, the script ran “modelled” 20 topics:
+First, the script “modelled” 20 topics:
 
 ```
 {'t00': 'mr, bill, committee, house, senate, resolution, confederate, states, '
@@ -50,4 +49,6 @@ First, the script ran “modelled” 20 topics:
  't19': 'priv, prices, price, pounds, st, pound, bushel, horses, profits, hire'}
 ```
 
-<img src="/images/fulls/007a.jpg" class="fit image"> Confirmation Screenshot.
+
+
+<img src="/images/fulls/12a.jpg" class="fit image"> Confirmation Screenshot.
