@@ -49,7 +49,7 @@ First, the script “modelled” 20 topics:
  't19': 'priv, prices, price, pounds, st, pound, bushel, horses, profits, hire'}
 ```
 Most topics certainly make sense in the context of historical events and developments (Civil War, Richmond). Some, on the other hand, seem to be too generic or are just not really useful at first glance. 
-“t15” - by all its cruelty from todays perspective - seemed to be quite concrete and straightforward contentwise, and (at that point still unaware that Robert K. Nelson is also featuring it heavily in his project “Mining the Dispatch”) I wanted to look deeper into this topic and texts. A huge amount of the Dispatch issues feature what Nelson describes as “fugitive slave advertisements”, where there are “rewards” of a certain amount of “dollars” offered for relevant tips or the return of fugitive slaves, who were then described by their outward appearance, the location they were last seen etc. 
+“t15” - by all its cruelty from todays perspective - seemed to be quite concrete and straightforward contentwise, and (at that point still unaware that Robert K. Nelson is also featuring it heavily in his project <a href="http://dsl.richmond.edu/dispatch/pages/home">“Mining the Dispatch”</a>) I wanted to look deeper into this topic and texts. A huge amount of the Dispatch issues feature what Nelson describes as “fugitive slave advertisements”, where there are “rewards” of a certain amount of “dollars” offered for relevant tips or the return of fugitive slaves, who were then described by their outward appearance, the location they were last seen etc. 
 Looking into the texts, it becomes apparent that certain words are used repeatably in always very similar structured articles. These patterns of word usage and structure are detected by the algorithms, and assigned relatively as topics to the articles. 
 
 <img src="/images/fulls/12a.jpg" class="fit image"> 
@@ -59,7 +59,23 @@ Looking into the texts, it becomes apparent that certain words are used repeatab
 This, the possibility to automatically visualise long-term developments (represented via the topics) backed by (hugely) large samples, certainly are very useful tools and methods for historians that - when critically applied - allow new perspectives on certain research areas, especially the graphs visualising the (relative) appearance - the trend of a topic - compared to other topics and incisive historical events (as utilized in Nelsons work).
 <br />
 <br />
-Comparing the models for 20, 30 and 40 topics, it is interesting to see that some remain consistant also with the assoziated keywords, while others get kind of unpicked. As an example for the former
+Comparing the models for 20, 30 and 40 topics, it is interesting to see that some remain consistent with their assoziated keywords, while others get kind of unpicked. Generally there seems to be a tendency that more modelled topics result in more but similar topics. 
+<br />
+Looking at the “t15-fugitive slave advertisements” example again, we see that it remains consistent wether there are 20 or 40 topic models processed. Yet, with 40 topics, a second and very similar topic arises (“t12”).
+
+
+```
+20:
+'t15': 'reward, dollars, feet, richmond, negro, th, county, inches, black, hundred',
+
+30:
+'t05’: 'reward, dollars, feet, richmond, county, inches, th, negro, black, delivery',
+
+40:
+'t12’: 'black, raised, brown, reward, dollars, hundred, carolina, north, hair, big',
+
+'t35': 'reward, dollars, feet, inches, negro, richmond, county, hundred, black, delivery',
+```
 
 
  
