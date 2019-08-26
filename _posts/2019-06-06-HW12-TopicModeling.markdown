@@ -54,6 +54,12 @@ Looking into the texts, it becomes apparent that certain words are used repeatab
 
 <img src="/images/fulls/12a.jpg" class="fit image"> 
 
-This, the possibility to automatically visualise long-term developments (represented via the topics) backed by (hugely) large samples, certainly are very useful tools and methods for historians that - when critically applied - allow new perspectives on certain research areas, especially the graphs visualising the (relative) appearance - the trend of a topic - compared to other topics and incisive historical events.
+<img src="/images/fulls/12b.jpg" class="fit image">
 
-<img src="/images/fulls/12b.jpg" class="fit image"> 
+This, the possibility to automatically visualise long-term developments (represented via the topics) backed by (hugely) large samples, certainly are very useful tools and methods for historians that - when critically applied - allow new perspectives on certain research areas, especially the graphs visualising the (relative) appearance - the trend of a topic - compared to other topics and incisive historical events (as utilized in Nelsons work).
+<br />
+<br />
+Comparing the models for 20, 30 and 40 topics, it is interesting to see that some remain consistant also with the assoziated keywords, while others get kind of unpicked. As an example for the former
+
+
+ 
