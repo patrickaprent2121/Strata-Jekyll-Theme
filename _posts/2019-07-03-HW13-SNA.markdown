@@ -1,9 +1,0 @@
----
-layout: post
-title: HW13 - Social Network Analysis
-date: 2019-07-03T14:37:44.000Z
-categories: update
----
-Social Network Analysis
-
-<img src="/images/fulls/008a.jpg" class="fit image"> Confirmation Screenshot.
