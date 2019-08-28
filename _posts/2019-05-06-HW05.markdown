@@ -1,0 +1,9 @@
+---
+layout: post
+title: HW05 - Georeferencing with QGIS
+date: 2019-05-06T14:37:44.000Z
+categories: update
+---
+
+In
+
