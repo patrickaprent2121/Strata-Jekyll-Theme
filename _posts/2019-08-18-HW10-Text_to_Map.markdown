@@ -215,7 +215,8 @@ generate("1865")
 
 <img src="/images/fulls/010a.jpg" class="fit image">
 
-PART C:
+PART C: Was to match the generated TGN file (with all TGN places, IDs and coordinates) with the Dispatch toponym-frequency file, therefore see what places appear in the Dispatch and create a new file with only those places, the corresponding frequencies, and the coordinates from the TGN file. The new TSV files then hold “tgnID”, “placename”, “lat”, “lon” and “freq” for each year.
+
 
 ```
 # importing python libraries
@@ -296,3 +297,4 @@ match("dispatch_toponyms_1863.tsv", dictionary)
 match("dispatch_toponyms_1864.tsv", dictionary)
 match("dispatch_toponyms_1865.tsv", dictionary)
 ```
+<img src="/images/fulls/010p2.jpg" class="fit image">
