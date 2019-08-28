@@ -30,3 +30,29 @@ Lynchburg,Virginia,-79.10572,37.38805,-79.10572,37.38805
 Hicksford,Virginia,-77.55204,36.67186,-77.55204,36.67186
 Mathews,Virginia,-76.35911,37.43649,-76.35911,37.43649
 ```
+<img src="/images/fulls/HW05_georeferencedMapEastUS.jpg" class="fit image"> 
+
+```
+city,state,lon,lat,lon1,lat1
+Tallahassee,Florida,-84.36782,30.38508,-84.36782,30.38508
+Baton Rouge,Louisiana,-91.30600,30.45870,-91.30600,30.45870
+New Orleans,Louisiana,-89.98707,29.92240,-89.98707,29.92240
+Little Rock,Arkansas,-92.43027,34.56251,-92.43027,34.56251
+Nashville,Tennessee,-86.69305,36.09831,-86.69305,36.09831
+Dubuque,Iowa,-90.63172,42.45807,-90.63172,42.45807
+Madison,Wisconsin,-89.31772,42.98787,-89.31772,42.98787
+Milwaukee,Wisconsin,-87.78661,42.99628,-87.78661,42.99628
+Detroit,Michigan,-83.12742,42.35278,-83.12742,42.35278
+Columbus,Ohio,-83.15355,39.93614,-83.15355,39.93614
+Buffalo,New York,-78.85293,42.84385,-78.85293,42.84385
+Gettysburg,Pennsylvania,-77.18994,39.81003,-77.18994,39.81003
+Washington,D.C.,-77.04118,38.88508,-77.04118,38.88508
+Richmond,Virginia,-77.63208,37.52564,-77.63208,37.52564
+Charleston,North Carolina,-80.11785,32.74758,-80.11785,32.74758
+New York,New York,-73.71706,40.77263,-73.71706,40.77263
+Boston,Massachusetts,-70.87795,42.42924,-70.87795,42.42924
+Portland,Maine,-70.12949,43.69501,-70.12949,43.69501
+Bangor,Maine,-68.76213,44.81519,-68.76213,44.81519
+Ithaca,New York,-76.43259,42.49766,-76.43259,42.49766
+
+```
