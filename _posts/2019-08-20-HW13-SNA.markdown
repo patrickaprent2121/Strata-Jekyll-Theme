@@ -4,7 +4,7 @@ title: HW13 - Social Network Analysis
 date: 2019-08-20T15:37:44.000Z
 categories: update
 ---
-Social Network Analysis
+We should create a network of places in the “Dispatch”. Places mentioned in an article should be visualised with all their connections to other places in the same article. Therefore a python script generated a TSV file including the places, articleIDs, their connections (as weight), temporal information and the coordinates of the places. This TSV was imported to Gephi and used to create nodes and edges. Finally the visualisation was projected on a real geographical map via Gephi plug-ins, and it was exported as kmz and used as a layer for visualisation in Google Earth.
 
 <img src="/images/fulls/13d.jpg" class="fit image">
 <img src="/images/fulls/13a.jpg" class="fit image">
