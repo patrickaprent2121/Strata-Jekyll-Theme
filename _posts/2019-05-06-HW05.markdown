@@ -5,6 +5,8 @@ date: 2019-05-06T14:37:44.000Z
 categories: update
 ---
 
+
+
 <img src="/images/fulls/HW05_georeferencedMapVirginia.jpg" class="fit image"> 
 
 ```
@@ -56,3 +58,4 @@ Bangor,Maine,-68.76213,44.81519,-68.76213,44.81519
 Ithaca,New York,-76.43259,42.49766,-76.43259,42.49766
 
 ```
+The task was to georeference 2 maps of the US during the Civil War with QGIS' "Georeferencer" tool, as well as to collect the coordinates of 20 places from these maps with the "Coordinate-capture" tool.
