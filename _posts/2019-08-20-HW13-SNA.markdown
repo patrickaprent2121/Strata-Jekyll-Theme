@@ -13,6 +13,8 @@ relationships of places, with a frequency of 10 or higher, leading to a much cle
 
 
 <img src="/images/fulls/13a.jpg" class="fit image">
+
+This visualisation with Google Earth shows only the places-relationships for Richmond in 1864.
 <img src="/images/fulls/13d.jpg" class="fit image">
 <img src="/images/fulls/13p1.jpg" class="fit image">
 <img src="/images/fulls/13p2.jpg" class="fit image">
